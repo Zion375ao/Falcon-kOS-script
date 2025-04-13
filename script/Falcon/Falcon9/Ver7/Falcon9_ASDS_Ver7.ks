@@ -47,7 +47,9 @@ until RunMode = 0 {
     else if RunMode = 3 {
         if ship:altitude < 31000 and not ToggleTex {
             ToggleSoot("Falcon9Tank").
+            wait 0.1.
             ToggleSoot("Role").
+            wait 0.1.
             ToggleSoot("MainEngine").
 
             set ToggleTex to true.
